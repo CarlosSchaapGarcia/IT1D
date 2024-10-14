@@ -1,0 +1,107 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face
+{
+    font-family: circularstd;
+    src:url(fonts/circularstd.ttf)
+}
+
+body
+{
+    background-image:url(photos/background.png);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1
+{
+    font-family: circularstd;
+    color: rgb(22, 101, 126);
+    opacity:1;
+    font-size: 4rem;
+    text-align: center;
+    background-color: rgba(251, 238, 215, 0.9);
+    margin:  6rem 0 0 0;
+    padding: 2rem;
+}
+
+.container
+{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(251, 238, 215, 0.9);
+    text-align: center;
+}
+
+.box1
+{
+    height: 20rem;
+    width: 28rem;
+    border-radius: 1rem;
+    background-color: rgb(186, 211, 238);
+    padding: 4em 0 0 0;
+    margin-right: 1.5rem;
+    margin-left: 0;
+}
+
+.box2
+{
+    height: 20rem;
+    width: 28rem;
+    border-radius: 1rem;
+    background-color: rgb(186, 211, 238);
+    padding: 4em 0 0 0;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.box3
+{
+    height: 20rem;
+    width: 28rem;
+    border-radius: 1rem;
+    background-color: rgb(186, 211, 238);
+    padding: 4em 0 0 0;
+    margin-right: 0;
+    margin-left: 1.5rem;
+}
+
+.buttonright
+{
+    position: relative;
+    background: rgb(186, 211, 238);
+    height: 100px;
+    width: 100px;
+    border-radius: 3px;
+    margin: 15px 15px 15px 0px;
+    transition: 0.4s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+}
+
+.buttonleft
+{
+    position: relative;
+    background: rgb(186, 211, 238);
+    height: 100px;
+    width: 100px;
+    border-radius: 3px;
+    margin: 15px 0px 15px 15px;
+    transition: 0.4s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+}
+
+.buttonleft:hover .buttonright:hover
+{
+    box-shadow: 0px 0px 20px 20px black;
+}
