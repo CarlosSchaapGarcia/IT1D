@@ -1,0 +1,110 @@
+.body{
+    margin: 0;
+}
+.bgImage{
+    background-attachment: fixed;
+}
+main{
+    display: flex;
+    justify-content: center;
+    
+}
+.Table1{
+    display: flex;
+    flex-direction: column;
+    background-color: #FBEED7;
+    border-radius: 25px;
+    margin-top: 10vh;
+    height: 80vh;
+    max-height: 80vh;
+}
+.TableForm{
+   display: flex;
+
+}
+form{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+input{
+    margin-bottom: 2vh;
+    box-sizing: border-box;
+    width: auto;
+    border: none;
+    border-bottom: 2px solid #95261F;
+    
+}
+label{
+    font-family: Caveat;
+    color: #95261F;
+    font-size: 30px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-family: BookItalic;
+    color: #95261F;
+    font-size: 40px;
+    margin-top: 6vh;
+}
+
+.TimeDiv{
+    display: inline-block;
+    
+}
+
+.Book{
+    margin-right: 7vw;
+}
+.Input-Div{
+    display: inline;
+}
+
+#BookDate{
+    width: 20vw;
+}
+#Time{
+    display: inline;
+
+}
+
+.TableBookingButton{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    border-radius: 20px;
+    background-color: #95261F;
+    height: 6vh;
+}
+
+h3{
+font-family: CircularMedium;
+color: #FBEED7;
+
+}
+
+.Time-Label{
+    position: static;
+    margin-left: 4.5vw;
+}
+
+
+@font-face {
+    font-family: BookItalic;
+    src: url(Project/fonts/shellypalmer-circular-std-book-italic.ttf);
+}
+
+@font-face {
+    font-family: Caveat;
+    src: url(Project/fonts/caveat.bold.ttf);
+}
+
+@font-face {
+    font-family: CircularMedium;
+    src: url(Project/fonts/circular-std-medium-500.ttf);
+}
