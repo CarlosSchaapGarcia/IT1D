@@ -1,0 +1,33 @@
+@font-face {
+    font-family: circularSTD;
+    src: url(fonts/circular\ font/circularSTD-Book.otf);
+}
+
+footer{
+    background-color: rgba(251, 238, 215, 0.8);
+    display: flex;
+    justify-content: space-around;
+    font-family: circularSTD;
+    font-size: 25px;
+}
+
+#instagram{
+    height: 50px;
+}
+
+#facebook{
+    height: 50px;
+}
+
+#x{
+    height: 50px;
+}
+
+#footerContent{
+    color: rgb(0, 101, 124);
+    padding: 90px;
+}
+
+#footerContent > p{
+    margin: 0;
+}
