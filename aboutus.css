@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "circular-std-medium-500";
+    src: url(./Images/circular-std-medium-500.ttf);
+}
+
+@font-face {
+    font-family: "Caveat-Regular";
+    src: url(./Images/Caveat-Regular.ttf);
+}
+
+
+aboutus
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-image: url(./Images/image\ 13.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.whyarewedifferent
+{
+    grid-column: 1/3;
+    text-align: center;
+    font-size: 64px;
+    font-family: "Caveat-Regular";
+    color: #00657C;
+    padding-top: 200px;
+}
+
+.whydifferent
+{
+    grid-column: 1/3;
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    margin: auto;
+    justify-content: space-around;
+    flex-direction: row;
+    direction: row;
+    text-align: center;
+}
+
+.whybox
+{
+    width: 300px;
+    height: 300px;  
+    border: 4px solid #00657C;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgba(251, 238, 215, 0.8);
+    ;
+}
+
+.coffeebeans
+{
+    padding-top: 30px;
+}
+
+.supremebeans, .beansgreattaste
+{
+    font-family: "circular-std-medium-500";
+}
+
+.supremebeans
+{
+    padding-top: 20px;
+    color: #95261F;   
+    font-size: 24px;
+}
+
+.beansgreattaste
+{
+    padding-top: 20px;
+    color: #00657C;
+    font-size: 24px;
+}
+
+.aboutus1
+{
+    grid-column: 3/5;
+    grid-row: 1/3;
+    background-color: rgba(251, 238, 215, 0.8);
+}
+
+.aboutus
+{
+    font-size: 100px;
+    font-family: "Caveat-Regular";
+    color: #00657C;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.test1
+{
+    font-family: "circular-std-medium-500";
+    font-size: 24px;
+    color: #00657C;
+    padding-left: 200px;
+    padding-right: 100px;
+    padding-top: 50px;
+}
