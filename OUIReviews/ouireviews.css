@@ -1,7 +1,6 @@
 *
 {
     margin: 0;
-    padding: 0;
 }
 
 @font-face
@@ -12,96 +11,86 @@
 
 body
 {
-    background-image:url(photos/background.png);
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+   
 }
 
-h1
+.Reviewsh1
 {
     font-family: circularstd;
     color: rgb(22, 101, 126);
-    opacity:1;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     background-color: rgba(251, 238, 215, 0.9);
-    margin:  6rem 0 0 0;
-    padding: 2rem;
+    margin:  4rem 0 0 0;
+    padding: 3rem 0 0.5rem 0;
 }
 
+.usernameReview
+{
+    font-family: circularstd;
+    color: rgb(22, 101, 126);
+}
+
+.padding-s
+{
+    padding-top: 0.8rem;
+}
+
+.padding-l
+{
+    padding-top: 5.5rem;
+}
+.star
+{
+    height: 2.5rem;
+}
+
+.ppicture
+{
+    height: 6rem;
+    padding-top: 1rem;
+}
+
+.scroll-container
+{
+    display: flex;
+    justify-content: flex-start;
+    animation: scroll 40s linear infinite;
+    width: calc(5*29rem);
+}
+
+@keyframes scroll
+{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
 .container
 {
-    height: 60vh;
+    height: 70vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: rgba(251, 238, 215, 0.9);
     text-align: center;
-}
-
-.box1
-{
-    height: 20rem;
-    width: 28rem;
-    border-radius: 1rem;
-    background-color: rgb(186, 211, 238);
-    padding: 4em 0 0 0;
-    margin-right: 1.5rem;
-    margin-left: 0;
-}
-
-.box2
-{
-    height: 20rem;
-    width: 28rem;
-    border-radius: 1rem;
-    background-color: rgb(186, 211, 238);
-    padding: 4em 0 0 0;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-}
-
-.box3
-{
-    height: 20rem;
-    width: 28rem;
-    border-radius: 1rem;
-    background-color: rgb(186, 211, 238);
-    padding: 4em 0 0 0;
-    margin-right: 0;
-    margin-left: 1.5rem;
-}
-
-.buttonright
-{
-    position: relative;
-    background: rgb(186, 211, 238);
-    height: 100px;
-    width: 100px;
-    border-radius: 3px;
-    margin: 15px 15px 15px 0px;
-    transition: 0.4s ease;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
+    flex-direction: row;
 }
 
-.buttonleft
+.box1, .box2, .box3, .box4, .box5
 {
-    position: relative;
-    background: rgb(186, 211, 238);
-    height: 100px;
-    width: 100px;
-    border-radius: 3px;
-    margin: 15px 0px 15px 15px;
-    transition: 0.4s ease;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    overflow: hidden;
-}
-
-.buttonleft:hover .buttonright:hover
-{
-    box-shadow: 0px 0px 20px 20px black;
+    height: 23rem;
+    width: 28rem;
+    border-radius: 1rem;
+    background-color: rgb(186, 211, 238);
+    padding: 4em 0 0 0;
+    margin-inline: 0.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
 }
