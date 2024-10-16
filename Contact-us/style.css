@@ -23,11 +23,11 @@ footer{
     height: 50px;
 }
 
-#footerContent{
+.footerContent{
     color: rgb(0, 101, 124);
     padding: 90px;
 }
 
-#footerContent > p{
+.footerContent > p{
     margin: 0;
 }
