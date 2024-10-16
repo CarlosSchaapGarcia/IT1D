@@ -6,9 +6,6 @@ body{
 }
 .main{
     height: 2110vh;
-    display: grid;
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(11, 1fr);
     overflow: hidden;
     /* background-image: url("Project/Bg.webp"); */
     

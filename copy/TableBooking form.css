@@ -9,7 +9,7 @@ main{
     justify-content: center;
     
 }
-.table1{
+.Table1{
     display: flex;
     flex-direction: column;
     background-color: #FBEED7;
@@ -18,7 +18,7 @@ main{
     height: 80vh;
     max-height: 80vh;
 }
-.tableForm{
+.TableForm{
    display: flex;
 
 }
@@ -52,27 +52,27 @@ h2{
     margin-top: 6vh;
 }
 
-.timeDiv{
+.TimeDiv{
     display: inline-block;
     
 }
 
-.book{
+.Book{
     margin-right: 7vw;
 }
-.input-Div{
+.Input-Div{
     display: inline;
 }
 
-#bookDate{
+#BookDate{
     width: 20vw;
 }
-#time{
+#Time{
     display: inline;
 
 }
 
-.tablebook-button{
+.TableBookingButton{
     align-items: center;
     display: flex;
     justify-content: center;
@@ -83,11 +83,12 @@ h2{
 }
 
 h3{
+font-family: CircularMedium;
 color: #FBEED7;
 
 }
 
-.time-Label{
+.Time-Label{
     position: static;
     margin-left: 4.5vw;
 }
@@ -105,5 +106,5 @@ color: #FBEED7;
 
 @font-face {
     font-family: CircularMedium;
-    src: url(Project/fonts/circular-std-medium-500.ttf);
+    src: url(Ta);
 }
