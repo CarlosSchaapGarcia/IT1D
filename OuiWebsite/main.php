@@ -17,7 +17,7 @@
                 <li class="buttons"> <a href="#event-page" >Events</a></li>
                 <li class="buttons"><a href="#review-page" >Reviews</a></li>
                 <li class="buttons"><a href="" >Feedback</a></li>
-                <div class="squareforBooking"><li class="button-book"><a href="#bookPage" class="customLetters">Book a table</a></li></div>
+                <div class="squareforBooking"><li class="button-book"><a href="#bookPage" id="customLetters">Book a table</a></li></div>
             </ul>
         </div>
     </div>
