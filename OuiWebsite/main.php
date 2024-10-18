@@ -21,6 +21,14 @@
             </ul>
         </div>
     </div>
+    <div class="homepage">
+        <h2>Elegant, minimalistic, <br>beautiful, and timeless.</h2>
+        <p>That is the French essence. <br>Café OUI captures the this spirit of France <br>and brings it to the Netherlands.</p>
+        
+        <div class="menuButton">
+            <a href="#menuh1">Menu</a>
+        </div>
+    </div>
     <aboutus id="aboutus-page">
         <div class="whyarewedifferent">Why are we different?</div>
         <div class="whydifferent">
