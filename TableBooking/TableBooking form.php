@@ -8,6 +8,7 @@
 </head>
  <?php
 if($_SERVER["REQUEST_METHOD"] == "POST")
+
 {
     $fname = filter_input(INPUT_POST, "fname");
     $email = filter_input(INPUT_POST, "email");
@@ -16,7 +17,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     $time = filter_input(INPUT_POST, "time");
     $nrGuests = filter_input(INPUT_POST, "nrGuests", FILTER_SANITIZE_NUMBER_INT);
 
-    
 
     function  checkTime($vremya){
         if(is_numeric($vremya[0]) && is_numeric($vremya[3]) && $vremya[1] == ":" ){
@@ -41,13 +41,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     }
 
 }
-    
+
+
 
 
 
 ?>
 <?php
     var_dump($_POST);
+    
 ?> 
 <body background="Project/Bg.webp" class="bgImage">
 <main>
