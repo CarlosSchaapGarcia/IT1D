@@ -6,11 +6,11 @@
     <title>Oui</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body background="img/Bg.webp" class="bgImage">
+<body background="img/Bg.webp" class="bgImage" alt="background-img">
     <div class="main">
         <div class="navMenu">
             <ul>
-                <li><a><img src="Project/Logo-02_2.png" class="Logo"></a></li>
+                <li><a><img src="img/Logo-02_2.png" class="Logo" alt="Oui-Logo"></a></li>
                 <li class="buttons"><a href="" >Home</a></li>
                 <li class="buttons"><a href="" >About us</a></li>
                 <li class="buttons"><a href="" >Menu</a></li>
