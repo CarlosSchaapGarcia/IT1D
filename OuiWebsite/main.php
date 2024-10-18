@@ -9,7 +9,7 @@
 <body background="img/Bg.webp" class="bgImage" alt="background-img">
     <div class="main">
         <div class="navMenu">
-            <ul>
+            <ul class="navMenuUl">
                 <li><a><img src="img/Logo-02_2.png" class="Logo" alt="Oui-Logo"></a></li>
                 <li class="buttons"><a href="" >Home</a></li>
                 <li class="buttons"><a href="" >About us</a></li>
@@ -55,7 +55,34 @@
         </div>
     </aboutus>
 
-
+    <div class="menu">
+        <h1 id="menuh1">MENU</h1>
+        <h2 id="menuh2">Coffee and Drinks</h2>
+        <ul class="menulistA">
+            <li><b>Espresso</b> - Rich and bold, a classic shot of espresso. </li>
+            <li><b>Café au Lait</b> - Smooth coffee with steamed milk.</li>
+            <li><b>Cappuccino</b> - Espresso with steamed milk and a thick layer of foam.</li>
+            <li><b>Latte</b> - Creamy espresso with steamed milk and a light foam.</li>
+            <li><b>Mocha</b> - Espresso with chocolate, steamed milk and whipped cream.</li>
+            <li><b>Macchiato</b> - Espresso with a blob of frothed milk.</li>
+            <li><b>Warm chocolate milk</b> - Velvety smooth, made with real chocolate.</li>
+            <li><b>Tea selection</b> - A variety of fine teas, including Earl Grey, Chamomile and Green tea.</li>
+            <li><b>Add-ons for drinks</b></li>
+            <li><b>Flavoured syrups</b> - Vanilla, caramel, hazelnut.</li>
+            <li><b>Milk options</b> - Full, skim, almond, soy, oat.</li>
+        </ul>
+        <h2 id="menuh2">Cakes and sweets</h2>
+        <ul class="menulistB">
+            <li><b>Croissant</b>- Flaky, buttery and freshly baked.</li>
+            <li><b>Pain au Chocolat</b>- Croissant dough filled with rich chocolate.</li>
+            <li><b>Macarons</b>- Delicate almond meringue biscuits in a variety of flavours.</li>
+            <li><b>Éclair</b>- Soup dough filled with cream and garnished with chocolate.</li>
+            <li><b>Tarte Tatin</b>- Caramelised apple pie.</li>
+            <li><b>Madeleines</b>- Light and fluffy sponge cake in the shape of a shell.</li>
+            <li><b>Crème Brûlée</b>- Creamy custard with a caramelised sugar crust.</li>
+            <li><b>Financiers</b>- Small almond biscuits, perfect with coffee.</li>
+        </ul>
+    </div>
 
 
 

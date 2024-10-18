@@ -19,7 +19,6 @@ body{
     background-attachment: fixed;
 }
 .main{
-    height: 2110vh;
     overflow: hidden;
     
 }
@@ -44,7 +43,7 @@ body{
     white-space: nowrap;
     
 }
-ul{
+.navMenuUl{
     list-style: none;
     margin:0;
     display: flex;
@@ -71,19 +70,19 @@ ul{
     border-radius: 25px;
 }
 
-li a{
+.main li a{
     font-family: CaveatBold;
     color: #FBEED7;
     text-decoration: none;
 }
 
-li{
+.main li{
     
     float: left;
     margin-right: 2vw;
  }
 
- aboutus
+aboutus
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -120,7 +119,6 @@ li{
     border-radius: 10px;
     margin: 10px;
     background-color: rgba(251, 238, 215, 0.8);
-    ;
 }
 
 .coffeebeans
@@ -170,4 +168,47 @@ li{
     padding-left: 50px;
     padding-right: 100px;
     padding-top: 50px;
+}
+
+.menu
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #fbeed7;
+    margin-inline: 20vw;
+    margin-top: 25px;
+    border-radius: 10px;
+    padding-inline: 10px;
+}
+.menu b
+{
+    color: #95261F;
+}
+
+#menuh1
+{
+    text-align: center;
+    color: #95261F;
+    font-family: "circular-std-medium-500";
+}
+
+#menuh2
+{
+    color: #95261F;
+    font-family: "Caveat-Regular";
+}
+.menulistA
+{
+    list-style-type: none;
+    font-family: "circular-std-medium-500";
+}
+.menulistB
+{
+    list-style-type: none;
+    font-family: "circular-std-medium-500";
+}
+
+.menulistB .menulistA li 
+{
+    margin: 10px;
 }
