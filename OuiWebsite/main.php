@@ -381,7 +381,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     </div>
 </div>
 
+<footer>
+        <div class="footerContent">
+            <h3>Contact us</h3>
+            <p>Email: oui@gmail.com</p>
+            <p>Phone: +31 123 456 789</p>
+        </div>
 
+        <div class="footerContent">
+            <h3>Follow us</h3>
+            <a href="https://www.instagram.com/"><img id="instagram" src="./img/instagram.png" alt="instagram"></a>
+            <a href="https://www.facebook.com/"><img id="facebook" src="./img/facebook.png" alt="facebook"></a>
+            <a href="https://x.com/"><img id="x" src="./img/x.png" alt="x"></a>
+        </div>
+
+        <div class="footerContent">
+            <h3>You can find us here</h3>
+            <p>Location: Balkenweg 1, Assen</p>
+            <p>City: Emmen</p>
+        </div>
+    </footer>
 
 
 
