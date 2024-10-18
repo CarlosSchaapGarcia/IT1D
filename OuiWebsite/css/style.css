@@ -13,6 +13,16 @@
     src: url("../fonts/caveat.bold.ttf");
 }
 
+@font-face {
+    font-family: "BookItalic";
+    src: url("Project/fonts/shellypalmer-circular-std-book-italic.ttf");
+}
+
+@font-face {
+    font-family: CircularMedium;
+    src: url(Project/fonts/circular-std-medium-500.ttf);
+}
+
 body{
     margin: 0;
     overflow-x: hidden;
@@ -329,3 +339,92 @@ aboutus
     text-align: center;
     flex-shrink: 0;
 }
+
+.main-booking{
+    display: flex;
+    justify-content: center;
+    
+}
+.table1{
+    display: flex;
+    flex-direction: column;
+    background-color: #FBEED7;
+    border-radius: 25px;
+    margin-top: 10vh;
+    height: 80vh;
+    max-height: 80vh;
+}
+.tableForm{
+   display: flex;
+
+}
+form{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+input{
+    margin-bottom: 2vh;
+    box-sizing: border-box;
+    width: auto;
+    border: none;
+    border-bottom: 2px solid #95261F;
+    
+}
+label{
+    font-family: Caveat;
+    color: #95261F;
+    font-size: 30px;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-family: BookItalic;
+    color: #95261F;
+    font-size: 40px;
+    margin-top: 6vh;
+}
+
+.timeDiv{
+    display: inline-block;
+    
+}
+
+.book{
+    margin-right: 7vw;
+}
+.input-Div{
+    display: inline;
+}
+
+#bookDate{
+    width: 20vw;
+}
+#time{
+    display: inline;
+
+}
+
+.tablebook-button{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    border-radius: 20px;
+    background-color: #95261F;
+    height: 6vh;
+}
+
+h3{
+color: #FBEED7;
+
+}
+
+.time-Label{
+    position: static;
+    margin-left: 4.5vw;
+}
+
