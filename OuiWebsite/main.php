@@ -1,20 +1,3 @@
-<?php
-if($_SERVER["REQUEST_METHOD"] == "POST")
-
-{
-    $fname = filter_input(INPUT_POST, "fname");
-    $email = filter_input(INPUT_POST, "email");
-    $phoneNr = filter_input(INPUT_POST, "phoneNr", FILTER_SANITIZE_NUMBER_INT);
-    $bookDate = filter_input(INPUT_POST, "bookDate", FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
-    $time = filter_input(INPUT_POST, "time");
-    $nrGuests = filter_input(INPUT_POST, "nrGuests", FILTER_SANITIZE_NUMBER_INT);
-}
-
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,16 +12,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
             <ul class="navMenuUl">
                 <li><a><img src="img/Logo-02_2.png" class="Logo" alt="Oui-Logo"></a></li>
                 <li class="buttons"><a href="" >Home</a></li>
-                <li class="buttons"><a href="" >About us</a></li>
-                <li class="buttons"><a href="" >Menu</a></li>
-                <li class="buttons"> <a href="" >Events</a></li>
-                <li class="buttons"><a href="" >Reviews</a></li>
+                <li class="buttons"><a href="#aboutus-page" >About us</a></li>
+                <li class="buttons"><a href="#menu-page" >Menu</a></li>
+                <li class="buttons"> <a href="#event-page" >Events</a></li>
+                <li class="buttons"><a href="#review-page" >Reviews</a></li>
                 <li class="buttons"><a href="" >Feedback</a></li>
-                <div class="squareforBooking"><li class="button-book"><a href="" class="customLetters">Book a table</a></li></div>
+                <div class="squareforBooking"><li class="button-book"><a href="#bookPage" class="customLetters">Book a table</a></li></div>
             </ul>
         </div>
     </div>
-    <aboutus>
+    <aboutus id="aboutus-page">
         <div class="whyarewedifferent">Why are we different?</div>
         <div class="whydifferent">
             <div class="whybox">
@@ -72,7 +55,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         </div>
     </aboutus>
 
-    <div class="menu">
+    <div class="menu" id="menu-page">
         <h1 id="menuh1">MENU</h1>
         <h2 id="menuh2">Coffee and Drinks</h2>
         <ul class="menulistA">
@@ -101,7 +84,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         </ul>
     </div>
 
-    <main class="EventMainBox">
+    <main class="EventMainBox" id="event-page">
     <h1 id="Eventh1">Events</h1>
        <div class="eventbox"> 
           <img class="eventPicture" src="img/eventpic.png" alt="event_picutre"> 
@@ -117,7 +100,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         </div>
   </main>
 
-  <section>
+  <section id="review-page">
     <h1 class="text-color Reviewsh1">Reviews</h1>
     <div class="container">
         <div class="scroll-container">
@@ -306,6 +289,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
   </div>
     </div>
     </section>
+    <?php
+        if($_SERVER["REQUEST_METHOD"] == "POST")
+
+        {
+            $fname = filter_input(INPUT_POST, "fname");
+            $email = filter_input(INPUT_POST, "email");
+            $phoneNr = filter_input(INPUT_POST, "phoneNr", FILTER_SANITIZE_NUMBER_INT);
+            $bookDate = filter_input(INPUT_POST, "bookDate", FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+            $time = filter_input(INPUT_POST, "time");
+            $nrGuests = filter_input(INPUT_POST, "nrGuests", FILTER_SANITIZE_NUMBER_INT);
+        }
+
+
+    ?>
+
 
 
     <?php
@@ -345,7 +343,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
     
 ?> 
 
-<div class="main-booking">
+<div class="main-booking" id="bookPage">
     <div class="table1">
         <h2>Table booking form</h2>
         <div class="tableForm">
