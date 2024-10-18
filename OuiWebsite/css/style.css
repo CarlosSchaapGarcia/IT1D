@@ -95,7 +95,7 @@ body{
 .homepage{
     background-color: rgba(251, 238, 215, 0.8);
     font-family: "circular-std-medium-500";
-    font-size: 25px;
+    font-size: 24px;
     width: 40vw;
     height: 80vh;
     border-radius: 10px;
@@ -473,17 +473,10 @@ footer{
     margin-top: 200px;
 }
 
-#instagram{
-    height: 50px;
+#instagram, #facebook, #x{
+    height: 60px;
 }
 
-#facebook{
-    height: 50px;
-}
-
-#x{
-    height: 50px;
-}
 
 .footerContent{
     color: rgb(0, 101, 124);
