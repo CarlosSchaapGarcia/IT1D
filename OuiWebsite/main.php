@@ -1,3 +1,20 @@
+<?php
+if($_SERVER["REQUEST_METHOD"] == "POST")
+
+{
+    $fname = filter_input(INPUT_POST, "fname");
+    $email = filter_input(INPUT_POST, "email");
+    $phoneNr = filter_input(INPUT_POST, "phoneNr", FILTER_SANITIZE_NUMBER_INT);
+    $bookDate = filter_input(INPUT_POST, "bookDate", FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+    $time = filter_input(INPUT_POST, "time");
+    $nrGuests = filter_input(INPUT_POST, "nrGuests", FILTER_SANITIZE_NUMBER_INT);
+}
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,6 +117,7 @@
         </div>
   </main>
 
+  <section>
     <h1 class="text-color Reviewsh1">Reviews</h1>
     <div class="container">
         <div class="scroll-container">
@@ -195,6 +213,7 @@
           </div>
       </div>
 
+
       <div class="box1">
         <div>
             <img src="img/star.png" alt="star" class="star">
@@ -286,19 +305,10 @@
       </div>
   </div>
     </div>
+    </section>
 
 
     <?php
-if($_SERVER["REQUEST_METHOD"] == "POST")
-
-{
-    $fname = filter_input(INPUT_POST, "fname");
-    $email = filter_input(INPUT_POST, "email");
-    $phoneNr = filter_input(INPUT_POST, "phoneNr", FILTER_SANITIZE_NUMBER_INT);
-    $bookDate = filter_input(INPUT_POST, "bookDate", FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
-    $time = filter_input(INPUT_POST, "time");
-    $nrGuests = filter_input(INPUT_POST, "nrGuests", FILTER_SANITIZE_NUMBER_INT);
-
 
     function  checkTime($vremya){
         if(is_numeric($vremya[0]) && is_numeric($vremya[3]) && $vremya[1] == ":" ){
@@ -322,7 +332,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         checkTime($time);
     }
 
-}
+    
+
 
 
 
@@ -330,10 +341,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
 ?>
 <?php
-    var_dump($_POST);
+    
     
 ?> 
-<main class="main-booking">
+
+<div class="main-booking">
     <div class="table1">
         <h2>Table booking form</h2>
         <div class="tableForm">
@@ -367,10 +379,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
         </div>
     </div>
-</main>
-
-
-
+</div>
 
 
 
