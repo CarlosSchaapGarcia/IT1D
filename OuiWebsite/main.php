@@ -84,6 +84,22 @@
         </ul>
     </div>
 
+    <main class="EventMainBox">
+    <h1 id="Eventh1">Events</h1>
+       <div class="eventbox"> 
+          <img class="eventPicture" src="img/eventpic.png" alt="event_picutre"> 
+              <div class="EventText">
+                    <p>
+                      Join us for a special event at our café!  Come celebrate with us with delicious coffee, fresh croissants.
+                      Come celebrate with us, enjoy great company, and experience. We can't wait to see you there!
+                    </p>
+                    <p>
+                      We will see  you on “insert the date”!
+                    </p>
+              </div>
+        </div>
+  </main>
+
     <h1 class="text-color Reviewsh1">Reviews</h1>
     <div class="container">
         <div class="scroll-container">
