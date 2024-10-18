@@ -212,3 +212,84 @@ aboutus
 {
     margin: 10px;
 }
+
+.Reviewsh1
+{
+    font-family: "circular-std-medium-500";
+    color: rgb(22, 101, 126);
+    font-size: 3rem;
+    text-align: center;
+    background-color: rgba(251, 238, 215, 0.9);
+    margin:  4rem 0 0 0;
+    padding: 3rem 0 0.5rem 0;
+}
+
+.usernameReview
+{
+    font-family: "circular-std-medium-500";
+    color: rgb(22, 101, 126);
+}
+
+.padding-s
+{
+    padding-top: 0.8rem;
+}
+
+.padding-l
+{
+    padding-top: 5.5rem;
+}
+.star
+{
+    height: 2.5rem;
+}
+
+.ppicture
+{
+    height: 6rem;
+    padding-top: 1rem;
+}
+
+.scroll-container
+{
+    display: flex;
+    justify-content: flex-start;
+    animation: scroll 40s linear infinite;
+    width: calc(5*29rem);
+}
+
+@keyframes scroll
+{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+.container
+{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(251, 238, 215, 0.9);
+    text-align: center;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.box1, .box2, .box3, .box4, .box5
+{
+    height: 23rem;
+    width: 28rem;
+    border-radius: 1rem;
+    background-color: rgb(186, 211, 238);
+    padding: 4em 0 0 0;
+    margin-inline: 0.5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+}
