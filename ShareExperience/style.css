@@ -5,7 +5,9 @@
     background-color: #fbeed7;
     margin-inline: 20vw;
     border-radius: 10px;
-    padding-inline: 10px;
+    padding: 10px;
+    gap: 1rem;
+    color: #00657C;
 }
 
 .ShareExpStarBox
@@ -20,12 +22,23 @@
     flex-direction: column;
     background-color: #00657C;
     border-radius: 5px;
+    padding: 10px;
+    color: #FBEED7;
 }
 
 .SubmitReview
 {
     display: flex;
     flex-direction: column;
+    margin-inline: 40%;
     background-color: #00657C;
-    border-radius: 5px;
+    border-radius: 10px;
+    color: #FBEED7;
+    font-size: x-large;
+    padding: 1rem;
+}
+
+input#Comments
+{
+    width: 100%;
 }
