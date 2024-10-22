@@ -307,6 +307,8 @@ nav{
 {
     font-family: "circular-std-medium-500";
     color: rgb(22, 101, 126);
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .padding-s
@@ -316,7 +318,7 @@ nav{
 
 .padding-l
 {
-    padding-top: 5.5rem;
+    padding-top: 2rem;
 }
 .star
 {
@@ -359,7 +361,7 @@ nav{
     flex-direction: row;
 }
 
-.box1, .box2, .box3, .box4, .box5
+.box
 {
     height: 23rem;
     width: 28rem;
