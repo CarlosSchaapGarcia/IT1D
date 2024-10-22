@@ -359,7 +359,7 @@
                 <label for="fname">Name</label>
                 <input type="text" id ="fname" name="fname" >
                 <label for="email">Email</label>
-                <input type="email" id ="email" name="fname">
+                <input type="email" id ="email" name="email">
                 <label for="phoneNr">Phone number</label>
                 <input type="number" id ="phoneNr" name="phoneNr">
                 <div class="timeDiv">
