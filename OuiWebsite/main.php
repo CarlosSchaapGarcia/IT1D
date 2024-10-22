@@ -1,3 +1,18 @@
+<?php
+        if($_SERVER["REQUEST_METHOD"] == "POST")
+
+        {
+            $fname = filter_input(INPUT_POST, "fname");
+            $email = filter_input(INPUT_POST, "email");
+            $phoneNr = filter_input(INPUT_POST, "phoneNr", FILTER_SANITIZE_NUMBER_INT);
+            $bookDate = filter_input(INPUT_POST, "bookDate", FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
+            $time = filter_input(INPUT_POST, "time");
+            $nrGuests = filter_input(INPUT_POST, "nrGuests", FILTER_SANITIZE_NUMBER_INT);
+        }
+
+
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -297,24 +312,34 @@
   </div>
     </div>
     </section>
-    <?php
-        if($_SERVER["REQUEST_METHOD"] == "POST")
-
-        {
-            $fname = filter_input(INPUT_POST, "fname");
-            $email = filter_input(INPUT_POST, "email");
-            $phoneNr = filter_input(INPUT_POST, "phoneNr", FILTER_SANITIZE_NUMBER_INT);
-            $bookDate = filter_input(INPUT_POST, "bookDate", FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
-            $time = filter_input(INPUT_POST, "time");
-            $nrGuests = filter_input(INPUT_POST, "nrGuests", FILTER_SANITIZE_NUMBER_INT);
-        }
-
-
-    ?>
-
 
 
     <?php
+
+function checkName($name)
+{
+    if(empty($name))
+    {
+        echo "Please enter your name";
+    }
+    else
+    {
+        checkNameLenght($name);
+    }
+}
+
+function checkNameLenght($name)
+{
+    if(strlen($name) < 4 || strlen($name) >10)
+    {
+        echo "Name has to be between 4 and 10 characters long";
+    }
+    else
+    {
+        echo "Name is good";
+    }
+
+}
 
     function  checkTime($vremya){
         if(is_numeric($vremya[0]) && is_numeric($vremya[3]) && $vremya[1] == ":" ){
@@ -338,8 +363,15 @@
         checkTime($time);
     }
 
-    
 
+    if(empty($fname))
+    {
+        echo "Please enter your name";
+    }
+    else
+    {
+        checkName($fname);
+    }
 
 
 
