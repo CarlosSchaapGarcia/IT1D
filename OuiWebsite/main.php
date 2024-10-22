@@ -21,20 +21,23 @@
     <title>Oui Website</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-    <div class="main">
-        <div class="navMenu">
-            <ul class="navMenuUl">
-                <li><a><img src="img/Logo-02_2.png" class="Logo" alt="Oui-Logo"></a></li>
-                <li class="buttons"><a href="" >Home</a></li>
-                <li class="buttons"><a href="#aboutus-page" >About us</a></li>
-                <li class="buttons"><a href="#menu-page" >Menu</a></li>
-                <li class="buttons"> <a href="#event-page" >Events</a></li>
-                <li class="buttons"><a href="#review-page" >Reviews</a></li>
-                <li class="buttons"><a href="" >Feedback</a></li>
-                <div class="squareforBooking"><li class="button-book"><a href="#bookPage" id="customLetters">Book a table</a></li></div>
-            </ul>
-        </div>
-    </div>
+
+<section class="main">
+    <nav>
+         <ul class="navMenuUl">
+            <li><a><img src="img/Logo-02_2.png" class="Logo" alt="Oui-Logo"></a></li>
+            <li class="buttons"><a href="" >Home</a></li>
+            <li class="buttons"><a href="#aboutus-page" >About us</a></li>
+            <li class="buttons"><a href="#menu-page" >Menu</a></li>
+            <li class="buttons"> <a href="#event-page" >Events</a></li>
+            <li class="buttons"><a href="#review-page" >Reviews</a></li>
+            <li class="buttons"><a href="" >Feedback</a></li>
+            <li class="button-book"><a href="#bookPage" id="customLetters">Book a table</a></li>
+        </ul>
+    </nav>
+</section>
+
+
     <div class="homepage">
         <h2>Elegant, minimalistic, <br>beautiful, and timeless.</h2>
         <p>That is the French essence. <br>Café OUI captures the this spirit of France <br>and brings it to the Netherlands.</p>

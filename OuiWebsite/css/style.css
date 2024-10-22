@@ -35,10 +35,7 @@ body{
     overflow-x: hidden;
     background-attachment: fixed;
 }
-.main{
-    overflow: hidden;
-    
-}
+
 .Logo{  
     margin-top: 2vh;
     margin-left: 5vw;
@@ -47,7 +44,7 @@ body{
     max-width: 150px;
     
 }
-.navMenu{
+nav{
     display: flex;
     position: fixed;
     z-index: 100;
