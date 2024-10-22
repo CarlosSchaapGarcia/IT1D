@@ -219,41 +219,33 @@ nav{
     flex-direction: column;
     background-color: #fbeed7;
     margin-inline: 20vw;
-    margin-top: 25px;
-    border-radius: 10px;
-    padding-inline: 10px;
-}
-.menu b
-{
-    color: #95261F;
+    border-radius: 1rem;
+    padding-inline: 1rem;
+
+    margin-top: 1rem;
 }
 
 #menuh1
 {
     text-align: center;
-    color: #95261F;
-    font-family: "circular-std-medium-500";
 }
 
-#menuh2
+#menuh1 , #menuh2
 {
     color: #95261F;
     font-family: "Caveat-Regular";
 }
-.menulistA
+
+.menulistA , .menulistB
 {
     list-style-type: none;
-    font-family: "circular-std-medium-500";
-}
-.menulistB
-{
-    list-style-type: none;
+    color: #95261F;
     font-family: "circular-std-medium-500";
 }
 
-.menulistB .menulistA li 
+.menulistA li , .menulistB li
 {
-    margin: 10px;
+    margin: 1rem 0;
 }
 
 .EventMainBox
