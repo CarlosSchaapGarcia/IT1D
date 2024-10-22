@@ -127,12 +127,12 @@
         </div>
   </main>
 
-  <section id="review-page">
+<section>
     <h1 class="text-color Reviewsh1">Reviews</h1>
     <div class="container">
         <div class="scroll-container">
 
-          <div class="box1">
+          <div class="box">
             <div>
                 <img src="img/star.png" alt="star" class="star">
                 <img src="img/star.png" alt="star" class="star">
@@ -142,15 +142,11 @@
                     <div>
                         <img src="img/user3.png" alt="user1" class="ppicture">
                   </div>
-                 <div>
                     <p class="padding-s usernameReview"><b>John Smith</b></p>
-                  </div>
-                  <div>
-                    <p class="padding-l usernameReview"><b>"The attention to detail in both the coffee <br>and decor is fantastic. Highly recommend!"</b></p>
-                </div>
+                    <p class="padding-l usernameReview"><b>"The attention to detail in both the coffee and decor is fantastic. Highly recommend!"</b></p>
             </div>
           </div>   
-         <div class="box2">
+         <div class="box">
             <div>
                 <img src="img/star.png" alt="star" class="star">
                 <img src="img/star.png" alt="star" class="star">
@@ -160,15 +156,11 @@
                 <div>
                     <img src="img/user2.png" alt="user1" class="ppicture">
                 </div>
-                <div>
                     <p class="padding-s usernameReview"><b>Tiago Valentim</b></p>
-                </div>
-                <div>
-                    <p class="padding-l usernameReview"><b>"The pastries are fresh, and the coffee is rich. <br>My new favorite spot!"</b></p>
-                </div>
+                    <p class="padding-l usernameReview"><b>"The pastries are fresh, and the coffee is rich. My new favorite spot!"</b></p>
             </div>
-         </div>  
-            <div class="box3">
+         </div>
+            <div class="box">
             <div>
                 <img src="img/star.png" alt="star" class="star">
                 <img src="img/star.png" alt="star" class="star">
@@ -178,15 +170,11 @@
                 <div>
                     <img src="img/user1.png" alt="user1" class="ppicture">
                 </div>
-                <div>
                     <p class="padding-s usernameReview"><b>Amanda San Martin</b></p>
-                </div>
-                <div>
                     <p class="padding-l usernameReview"><b>"Great Coffee and friendly Staff."</b></p>
-                </div>
             </div>
          </div>
-             <div class="box4">
+             <div class="box">
               <div>
                 <img src="img/star.png" alt="star" class="star">
                 <img src="img/star.png" alt="star" class="star">
@@ -196,15 +184,11 @@
                 <div>
                     <img src="img/user5.png" alt="user1" class="ppicture">
                 </div>
-                <div>
                     <p class="padding-s usernameReview"><b>Rose Mills</b></p>
-                </div>
-                <div>
-                    <p class="padding-l usernameReview"><b>"Lovely atmosphere, excellent coffee, <br>and the friendliest staff."</b></p>
-                </div>
+                    <p class="padding-l usernameReview"><b>"Lovely atmosphere, excellent coffee, and the friendliest staff."</b></p>
             </div>
          </div>
-         <div class="box5">
+         <div class="box">
             <div>
               <img src="img/star.png" alt="star" class="star">
               <img src="img/star.png" alt="star" class="star">
@@ -214,108 +198,83 @@
               <div>
                   <img src="img/user4.png" alt="user1" class="ppicture">
               </div>
-              <div>
                   <p class="padding-s usernameReview"><b>Ally Simmons</b></p>
-              </div>
-              <div>
-                  <p class="padding-l usernameReview"><b>"The best place to grab a croissant <br>and coffee to start your day."</b></p>
-              </div>
+                  <p class="padding-l usernameReview"><b>"The best place to grab a croissant and coffee to start your day."</b></p>
           </div>
       </div>
-
-
-      <div class="box1">
-        <div>
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
+      <div class="box">
+            <div>
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                    <div>
+                        <img src="img/user3.png" alt="user1" class="ppicture">
+                  </div>
+                    <p class="padding-s usernameReview"><b>John Smith</b></p>
+                    <p class="padding-l usernameReview"><b>"The attention to detail in both the coffee and decor is fantastic. Highly recommend!"</b></p>
+            </div>
+          </div>   
+         <div class="box">
+            <div>
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
                 <div>
-                    <img src="img/user3.png" alt="user1" class="ppicture">
-              </div>
-             <div>
-                <p class="padding-s usernameReview"><b>John Smith</b></p>
-              </div>
+                    <img src="img/user2.png" alt="user1" class="ppicture">
+                </div>
+                    <p class="padding-s usernameReview"><b>Tiago Valentim</b></p>
+                    <p class="padding-l usernameReview"><b>"The pastries are fresh, and the coffee is rich. My new favorite spot!"</b></p>
+            </div>
+         </div>
+            <div class="box">
+            <div>
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                <div>
+                    <img src="img/user1.png" alt="user1" class="ppicture">
+                </div>
+                    <p class="padding-s usernameReview"><b>Amanda San Martin</b></p>
+                    <p class="padding-l usernameReview"><b>"Great Coffee and friendly Staff."</b></p>
+            </div>
+         </div>
+             <div class="box">
               <div>
-                <p class="padding-l usernameReview"><b>"The attention to detail in both the coffee <br>and decor is fantastic. Highly recommend!"</b></p>
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                <img src="img/star.png" alt="star" class="star">
+                <div>
+                    <img src="img/user5.png" alt="user1" class="ppicture">
+                </div>
+                    <p class="padding-s usernameReview"><b>Rose Mills</b></p>
+                    <p class="padding-l usernameReview"><b>"Lovely atmosphere, excellent coffee, and the friendliest staff."</b></p>
             </div>
-        </div>
-      </div>   
-     <div class="box2">
-        <div>
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
+         </div>
+         <div class="box">
             <div>
-                <img src="img/user2.png" alt="user1" class="ppicture">
-            </div>
-            <div>
-                <p class="padding-s usernameReview"><b>Tiago Valentim</b></p>
-            </div>
-            <div>
-                <p class="padding-l usernameReview"><b>"The pastries are fresh, and the coffee is rich. <br>My new favorite spot!"</b></p>
-            </div>
-        </div>
-     </div>  
-        <div class="box3">
-        <div>
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
-            <div>
-                <img src="img/user1.png" alt="user1" class="ppicture">
-            </div>
-            <div>
-                <p class="padding-s usernameReview"><b>Amanda San Martin</b></p>
-            </div>
-            <div>
-                <p class="padding-l usernameReview"><b>"Great Coffee and friendly Staff."</b></p>
-            </div>
-        </div>
-     </div>
-         <div class="box4">
-          <div>
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
-            <img src="img/star.png" alt="star" class="star">
-            <div>
-                <img src="img/user5.png" alt="user1" class="ppicture">
-            </div>
-            <div>
-                <p class="padding-s usernameReview"><b>Rose Mills</b></p>
-            </div>
-            <div>
-                <p class="padding-l usernameReview"><b>"Lovely atmosphere, excellent coffee, <br>and the friendliest staff."</b></p>
-            </div>
-        </div>
-     </div>
-     <div class="box5">
-        <div>
-          <img src="img/star.png" alt="star" class="star">
-          <img src="img/star.png" alt="star" class="star">
-          <img src="img/star.png" alt="star" class="star">
-          <img src="img/star.png" alt="star" class="star">
-          <img src="img/star.png" alt="star" class="star">
-          <div>
-              <img src="img/user4.png" alt="user1" class="ppicture">
-          </div>
-          <div>
-              <p class="padding-s usernameReview"><b>Ally Simmons</b></p>
-          </div>
-          <div>
-              <p class="padding-l usernameReview"><b>"The best place to grab a croissant <br>and coffee to start your day."</b></p>
+              <img src="img/star.png" alt="star" class="star">
+              <img src="img/star.png" alt="star" class="star">
+              <img src="img/star.png" alt="star" class="star">
+              <img src="img/star.png" alt="star" class="star">
+              <img src="img/star.png" alt="star" class="star">
+              <div>
+                  <img src="img/user4.png" alt="user1" class="ppicture">
+              </div>
+                  <p class="padding-s usernameReview"><b>Ally Simmons</b></p>
+                  <p class="padding-l usernameReview"><b>"The best place to grab a croissant and coffee to start your day."</b></p>
           </div>
       </div>
-  </div>
     </div>
-    </section>
+    </div>
+</section>
 <?php
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
