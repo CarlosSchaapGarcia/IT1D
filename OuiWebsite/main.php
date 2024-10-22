@@ -318,6 +318,9 @@
     </section>
 <?php
 
+if($_SERVER["REQUEST_METHOD"] == "POST")
+{
+
 function checkName($name)
 {
     if(empty($name))
@@ -360,25 +363,15 @@ function checkNameLenght($name)
 
     if(empty($time) ){
         echo"Input is empty";
-    }
-    else{
+    }else{
         checkTime($time);
     }
+       
+    
 
 
-    if(empty($fname))
-    {
-        echo "Please enter your name";
-    }
-    else
-    {
         checkName($fname);
-    }
-
-
-
-
-
+}
 ?>
 <section class="main-booking" id="bookPage">
     <container class="table1">
