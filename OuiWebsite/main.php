@@ -378,10 +378,9 @@ function checkNameLenght($name)
 
 
 ?>
-<div class="main-booking" id="bookPage">
-    <div class="table1">
+<section class="main-booking" id="bookPage">
+    <container class="table1">
         <h2>Table booking form</h2>
-        <div class="tableForm">
             <form action="<?php echo $_SERVER["PHP_SELF"]?>"  method="POST">
                 <label for="fname">Name</label>
                 <input type="text" id ="fname" name="fname" >
@@ -408,11 +407,8 @@ function checkNameLenght($name)
 
                 
             </form>
-
-
-        </div>
-    </div>
-</div>
+    </container>
+</section>
 
 <footer>
         <div class="footerContent">
