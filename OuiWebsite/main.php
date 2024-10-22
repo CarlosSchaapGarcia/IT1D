@@ -80,7 +80,7 @@
         </div>
     </aboutus>
 
-    <div class="menu" id="menu-page">
+    <section class="menu">
         <h1 id="menuh1">MENU</h1>
         <h2 id="menuh2">Coffee and Drinks</h2>
         <ul class="menulistA">
@@ -107,7 +107,7 @@
             <li><b>Crème Brûlée</b>- Creamy custard with a caramelised sugar crust.</li>
             <li><b>Financiers</b>- Small almond biscuits, perfect with coffee.</li>
         </ul>
-    </div>
+    </section>
 
     <main class="EventMainBox" id="event-page">
     <h1 id="Eventh1">Events</h1>
