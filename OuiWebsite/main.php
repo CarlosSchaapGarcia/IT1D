@@ -21,7 +21,6 @@
     <title>Oui Website</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-<body background="img/Bg.webp" class="bgImage" alt="background-img">
     <div class="main">
         <div class="navMenu">
             <ul class="navMenuUl">
@@ -312,9 +311,7 @@
   </div>
     </div>
     </section>
-
-
-    <?php
+<?php
 
 function checkName($name)
 {
@@ -378,11 +375,6 @@ function checkNameLenght($name)
 
 
 ?>
-<?php
-    
-    
-?> 
-
 <div class="main-booking" id="bookPage">
     <div class="table1">
         <h2>Table booking form</h2>

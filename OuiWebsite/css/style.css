@@ -29,6 +29,8 @@ html{
 }
 
 body{
+    background-image: url("../img/Bg.webp");
+    background-size: 100vw;
     margin: 0;
     overflow-x: hidden;
     background-attachment: fixed;
