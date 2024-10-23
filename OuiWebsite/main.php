@@ -327,12 +327,37 @@ function checkNameLenght($name)
     }else{
         checkTime($time);
     }
-       
-    
 
+function nrGuestsEmptyChecker($nrGuestslength)
+{
+    if(empty($nrGuestslength))
+    {
+        echo "Please enter the number of guests";
+    }
+    else
+    {
+        checkGuestsLength($nrGuestslength);
+    }
 
-        checkName($fname);
 }
+
+function checkGuestsLength($nrGuestslength)
+{
+    if($nrGuestslength < 1 || $nrGuestslength > 99)
+    {
+        echo "The guest size has to be between 1 and 99";
+    }
+    else
+    {
+        echo "Guests is good";
+    }
+
+}
+
+    nrGuestsEmptyChecker($nrGuests);
+    checkName($fname);
+}
+
 ?>
 <section class="main-booking" id="bookPage">
     <container class="table1">
