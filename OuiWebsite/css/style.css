@@ -421,22 +421,17 @@ h2{
 
 .timeDiv{
     display: inline-block;
-    
 }
 
 .book{
     margin-right: 7vw;
 }
-.input-Div{
+.input-Div, #time{
     display: inline;
 }
 
 #bookDate{
     width: 20vw;
-}
-#time{
-    display: inline;
-
 }
 
 .tablebook-button{
