@@ -265,16 +265,15 @@ aboutus
 
     display: flex;
     flex-direction: column;
-    margin-inline: 20vw;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 25px;
+    margin-inline: 15rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
 }
 .EventMainBox #Eventh1
 {
     display: flex;
     justify-content: center;
-    font-family: "Caveat-Regular";
 }
 .eventbox
 {
@@ -285,13 +284,12 @@ aboutus
 
 .eventPicture
 {
-    width: 40%;
+    width: 20rem;
 }
 
 .EventText
 {
     padding-top: 4rem;
-    font-family: "circular-std-medium-500";
 }
 
 .Reviewsh1
