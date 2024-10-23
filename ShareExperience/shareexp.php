@@ -12,7 +12,7 @@
         
         <div class="ShareExpStarBox">
             <p>How was your expreience at our coffee shop?</p>
-            <form action="" method="">
+            <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
                 <input type="checkbox" name="1star" id="1star">
                 <input type="checkbox" name="2star" id="2star">
                 <input type="checkbox" name="3star" id="3star">
@@ -22,12 +22,12 @@
         </div>
         <p>Your feedback is important to us! Please share your experience below</p>
         <div class="ShareExpCommentBox">
-            <form action="" method="">
+            <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
                 <label for="Comments">Comments:</label>
                 <input type="text" name="Comments" id="Comments">
             </form>
         </div>
-        <form action="" method="">
+        <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
             <input type="checkbox" name="ConsentReview" id="ConsentReview">
             <label for="ConsentReview">I agree that my review can be published on the website</label>
             <input type="submit" class="SubmitReview" value="Submit Review">
