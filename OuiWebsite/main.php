@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
+<body>
+<main>
 <header>
     <nav>
          <ul class="navMenuUl">
@@ -111,11 +113,11 @@
         </ul>
     </section>
 
-    <section class="EventMainBox">
+    <article class="EventMainBox">
     <h1 id="Eventh1">Events</h1>
        <section class="eventbox"> 
           <img class="eventPicture" src="img/eventpic.png" alt="event_picutre"> 
-              <section class="EventText">
+              <container class="EventText">
                     <p>
                       Join us for a special event at our café!  Come celebrate with us with delicious coffee, fresh croissants.
                       Come celebrate with us, enjoy great company, and experience. We can't wait to see you there!
@@ -123,9 +125,9 @@
                     <p>
                       We will see  you on “insert the date”!
                     </p>
-              </section>
-       </section>
-  </section>
+             </container>
+    </section>
+    </article>
 
 <section id="review-page">
     <h1 class="text-color Reviewsh1">Reviews</h1>
@@ -294,9 +296,9 @@ function checkName($name)
 
 function checkNameLenght($name)
 {
-    if(strlen($name) < 4 || strlen($name) >10)
+    if(strlen($name) < 3 || strlen($name) >15)
     {
-        echo "Name has to be between 4 and 10 characters long";
+        echo "Name has to be between 3 and 15 characters long";
     }
     else
     {
@@ -390,6 +392,6 @@ function checkNameLenght($name)
 
 
 
-
+</main>
 </body>
 </html>
