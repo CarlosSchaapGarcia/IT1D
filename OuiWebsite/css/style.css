@@ -128,6 +128,7 @@ header li a{
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
     margin-top: 10rem;
 }
 
@@ -222,7 +223,7 @@ header li a{
     border-radius: 1rem;
     padding-inline: 1rem;
 
-    margin-top: 1rem;
+    margin-top: 10rem;
 }
 
 #menuh1
@@ -263,7 +264,8 @@ header li a{
     margin-inline: 15rem;
     padding: 2rem;
     border-radius: 1rem;
-    margin-top: 2rem;
+
+    margin-top: 10rem;
 }
 .EventMainBox #Eventh1
 {
@@ -294,8 +296,9 @@ header li a{
     font-size: 3rem;
     text-align: center;
     background-color: rgba(251, 238, 215, 0.9);
-    margin:  4rem 0 0 0;
     padding: 3rem 0 0.5rem 0;
+
+    margin:  10rem 0 0 0;
 }
 
 .usernameReview
@@ -380,9 +383,10 @@ header li a{
     flex-direction: column;
     background-color: #FBEED7;
     border-radius: 25px;
-    margin-top: 10vh;
     height: 80vh;
     max-height: 80vh;
+
+    margin-top: 10rem;
 }
 
 form{
@@ -461,7 +465,8 @@ footer{
     justify-content: space-around;
     font-family: "circular-std-medium-500";
     font-size: 25px;
-    margin-top: 200px;
+
+    margin-top: 10rem;
 }
 
 #instagram, #facebook, #x{
