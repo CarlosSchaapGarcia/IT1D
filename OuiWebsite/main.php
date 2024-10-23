@@ -354,9 +354,37 @@ function checkGuestsLength($nrGuestslength)
 
 }
 
+function PhoneNumberEmptyChecker($phoneNumberlength)
+{
+    if(empty($phoneNumberlength))
+    {
+        echo "Please enter a phone number";
+    }
+    else
+    {
+        PhoneNumberLengthChecker($phoneNumberlength);
+    }
+
+}
+
+function PhoneNumberLengthChecker($phoneNumberlength)
+{
+    if(strlen($phoneNumberlength) == 9)
+    {
+        echo "The phone number is good";
+    }
+    else
+    {
+        echo "Invalid phone number";
+    }
+
+}
+
+    PhoneNumberEmptyChecker($phoneNr);
     nrGuestsEmptyChecker($nrGuests);
     checkName($fname);
 }
+
 
 ?>
 <section class="main-booking" id="bookPage">
