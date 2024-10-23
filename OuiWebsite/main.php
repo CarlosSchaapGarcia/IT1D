@@ -38,14 +38,14 @@
 </header>
 
 
-    <div class="homepage">
+<section class="homepage">
         <h2>Elegant, minimalistic, <br>beautiful, and timeless.</h2>
         <p>That is the French essence. <br>Café OUI captures the this spirit of France <br>and brings it to the Netherlands.</p>
         
-        <div class="menuButton">
+        <p class="menuButton">
             <a href="#menuh1">Menu</a>
-        </div>
-    </div>
+        </p>
+    </section>
     <section class="aboutus-page" id="about-page">
         
         <container class="whydifferent">
@@ -373,9 +373,11 @@ function checkNameLenght($name)
 
         <div class="footerContent">
             <h3>Follow us</h3>
-            <a href="https://www.instagram.com/"><img id="instagram" src="./img/instagram.png" alt="instagram"></a>
-            <a href="https://www.facebook.com/"><img id="facebook" src="./img/facebook.png" alt="facebook"></a>
-            <a href="https://x.com/"><img id="x" src="./img/x.png" alt="x"></a>
+            <p>
+                <a href="https://www.instagram.com/"><img id="instagram" src="./img/instagram.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/"><img id="facebook" src="./img/facebook.png" alt="facebook"></a>
+                <a href="https://x.com/"><img id="x" src="./img/x.png" alt="x"></a>
+            </p>
         </div>
 
         <div class="footerContent">
@@ -388,12 +390,5 @@ function checkNameLenght($name)
 
 
 
-
-
-
-
-
-
-    
 </body>
 </html>
