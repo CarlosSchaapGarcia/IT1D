@@ -307,20 +307,92 @@ function checkNameLenght($name)
 
 }
 
-    function  checkTime($vremya){
-        if(is_numeric($vremya[0]) && is_numeric($vremya[3]) && $vremya[1] == ":" ){
-           echo"dasdadaa";
+    function  checkTime($userInputTime){
+        if(is_numeric($userInputTime[0]) && is_numeric($userInputTime[2]) && is_numeric($userInputTime[3]) && $userInputTime[1] == ":"){
+            checkTime2($userInputTime);
         }else{
-            doubleCheckTime($vremya);
+            doubleCheckTime($userInputTime);
         }
     }
-    function doubleCheckTime($vremya){
-        if(is_numeric($vremya[0])&& is_numeric($vremya[1]) && $vremya[2] == ":" && is_numeric($vremya[3])){
-            echo"good to go";
+
+    function checkTime2($userInputTime){
+        if($userInputTime[0] < 9){
+            echo "we are working from 9";
         }else{
-            echo '<h2 class="alert" >wrong time</h2>';
+            checkTime3($userInputTime);
         }
     }
+
+    function checkTime3($userInputTime){
+        if($userInputTime[2] < 0 || $userInputTime[2] > 5){
+            echo "invalid time";
+        }else{
+            echo"everything is good";
+        }
+    }
+
+    function doubleCheckTime($userInputTime){
+        if(is_numeric($userInputTime[0]) && is_numeric($userInputTime[1]) && $userInputTime[2] == ":" && is_numeric($userInputTime[3]) && is_numeric($userInputTime[4]) ){
+            doubleCheckTime2($userInputTime);
+        }else{
+            echo '<h2 class="alert"> wrong time</h2>';
+        }
+    }
+
+    function doubleCheckTime2($userInputTime){
+        if($userInputTime[0] > 2 || $userInputTime[0] < 1){
+            echo "invalid time";
+        }else{
+            doubleCheckTime3($userInputTime);
+        }
+    }
+
+     function doubleCheckTime3($userInputTime){
+        if($userInputTime[0] == 1){
+            checkTimeFirstNumber1($userInputTime);
+        }else{
+            checkTimeFirstNumber2($userInputTime);
+        }
+     }
+     function checkTimeFirstNumber1($userInputTime){
+        if($userInputTime[3] > 5){
+            echo "Time is incorrect";
+        }else{
+            echo "good to go";
+        }
+     }
+
+     function checkTimeFirstNumber2($userInputTime){
+        if($userInputTime[0] == 2){
+            checkSecondElement2($userInputTime);
+        }else{
+            echo "Invalid time";
+        }
+     }
+
+     function checkSecondElement2($userInputTime){
+        if($userInputTime[1] > 0){
+            echo "We are working until 21:00";
+        }else{
+            checkFourthElement2($userInputTime);
+        }
+     }
+
+     function checkFourthElement2($userInputTime){
+        if($userInputTime[3] > 5){
+            echo "Time is incorrect";
+        }else{
+            checkFifthElement2($userInputTime);
+        }
+     }
+
+    function checkFifthElement2($userInputTime){
+        if($userInputTime[4] > 0 && $userInputTime[3] == 5){
+            echo "You can not order a table 10 minutes before closing";
+        }else{
+            echo "Congrats";
+        }
+     }
 
     if(empty($time) ){
         echo"Input is empty";
