@@ -86,7 +86,7 @@
 
     <section class="menu" id="menu-page">
         <h1 id="menuh1">MENU</h1>
-        <h2 id="menuh2">Coffee and Drinks</h2>
+        <h2 class="menuh2">Coffee and Drinks</h2>
         <ul class="menulistA">
             <li><b>Espresso</b> - Rich and bold, a classic shot of espresso. </li>
             <li><b>Café au Lait</b> - Smooth coffee with steamed milk.</li>
@@ -100,7 +100,7 @@
             <li><b>Flavoured syrups</b> - Vanilla, caramel, hazelnut.</li>
             <li><b>Milk options</b> - Full, skim, almond, soy, oat.</li>
         </ul>
-        <h2 id="menuh2">Cakes and sweets</h2>
+        <h2 class="menuh2">Cakes and sweets</h2>
         <ul class="menulistB">
             <li><b>Croissant</b>- Flaky, buttery and freshly baked.</li>
             <li><b>Pain au Chocolat</b>- Croissant dough filled with rich chocolate.</li>
