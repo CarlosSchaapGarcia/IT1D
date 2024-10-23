@@ -373,6 +373,70 @@ header li a{
     flex-shrink: 0;
 }
 
+.ShareExpBox
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #fbeed7;
+    margin-inline: 20vw;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 1rem;
+    color: #00657C;
+
+    margin-top: 10rem;
+}
+
+.ShareExpStarBox
+{
+    display: flex;
+    flex-direction: column;
+}
+.ReviewStar
+{
+    width: 2rem;  
+    aspect-ratio: 1;
+    background: #F8CA00;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     ); 
+}
+
+input[type="checkbox"] 
+{
+    accent-color: rgb(253, 253, 0);
+}
+
+.ShareExpCommentBox
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #00657C;
+    border-radius: 5px;
+    padding: 10px;
+    color: #FBEED7;
+}
+
+.SubmitReview
+{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 40%;
+    background-color: #00657C;
+    border-radius: 10px;
+    color: #FBEED7;
+    font-size: x-large;
+    padding: 1rem;
+}
+
+input#Comments
+{
+    width: 100%;
+}
+
 .main-booking{
     display: flex;
     justify-content: center;
@@ -389,14 +453,14 @@ header li a{
     margin-top: 10rem;
 }
 
-form{
+.BookingForm{
     margin-left: 5vw;
     margin-right: 5vw;
     display: flex;
     flex-direction: column;
     
 }
-input{
+.BookingForm input{
     margin-bottom: 2vh;
     box-sizing: border-box;
     width: auto;
@@ -404,13 +468,13 @@ input{
     border-bottom: 2px solid #95261F;
     
 }
-label{
+.BookingForm label{
     font-family: "Caveat-Regular";
     color: #95261F;
     font-size: 36px;
 }
 
-h2{
+.table1 h2{
     display: flex;
     justify-content: center;
     font-family: BookItalic;
