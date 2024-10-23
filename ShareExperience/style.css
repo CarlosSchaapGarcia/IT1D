@@ -15,6 +15,23 @@
     display: flex;
     flex-direction: column;
 }
+.ReviewStar
+{
+    width: 2rem;  
+    aspect-ratio: 1;
+    background: #F8CA00;
+    clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+     ); 
+}
+
+input[type="checkbox"] 
+{
+    accent-color: rgb(253, 253, 0);
+}
 
 .ShareExpCommentBox
 {

@@ -6,6 +6,7 @@
     <title>shareexp</title>
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body>
     <div class="ShareExpBox">
         <h1>Share your experience</h1>
@@ -13,11 +14,11 @@
         <div class="ShareExpStarBox">
             <p>How was your expreience at our coffee shop?</p>
             <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
-                <input type="checkbox" name="1star" id="1star">
-                <input type="checkbox" name="2star" id="2star">
-                <input type="checkbox" name="3star" id="3star">
-                <input type="checkbox" name="4star" id="4star">
-                <input type="checkbox" name="5star" id="5star">
+                <input type="checkbox" name="1star" id="1star" class="ReviewStar">
+                <input type="checkbox" name="2star" id="2star" class="ReviewStar">
+                <input type="checkbox" name="3star" id="3star" class="ReviewStar">
+                <input type="checkbox" name="4star" id="4star" class="ReviewStar">
+                <input type="checkbox" name="5star" id="5star" class="ReviewStar">
              </form>
         </div>
         <p>Your feedback is important to us! Please share your experience below</p>
