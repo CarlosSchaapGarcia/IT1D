@@ -22,12 +22,12 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<section class="main">
+<header>
     <nav>
          <ul class="navMenuUl">
             <li><a><img src="img/Logo-02_2.png" class="Logo" alt="Oui-Logo"></a></li>
             <li class="buttons"><a href="" >Home</a></li>
-            <li class="buttons"><a href="#aboutus-page" >About us</a></li>
+            <li class="buttons"><a href="#about-page" >About us</a></li>
             <li class="buttons"><a href="#menu-page" >Menu</a></li>
             <li class="buttons"> <a href="#event-page" >Events</a></li>
             <li class="buttons"><a href="#review-page" >Reviews</a></li>
@@ -35,7 +35,7 @@
             <li class="button-book"><a href="#bookPage" id="customLetters">Book a table</a></li>
         </ul>
     </nav>
-</section>
+</header>
 
 
     <div class="homepage">
@@ -46,7 +46,7 @@
             <a href="#menuh1">Menu</a>
         </div>
     </div>
-    <section class="aboutus-page">
+    <section class="aboutus-page" id="about-page">
         
         <container class="whydifferent">
         <p class="whyarewedifferent">Why are we different?</p>
@@ -82,7 +82,7 @@
         </aside>
     </section>
 
-    <section class="menu">
+    <section class="menu" id="menu-page">
         <h1 id="menuh1">MENU</h1>
         <h2 id="menuh2">Coffee and Drinks</h2>
         <ul class="menulistA">
