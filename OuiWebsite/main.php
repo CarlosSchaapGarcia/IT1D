@@ -382,8 +382,9 @@ function checkNameLenght($name)
 
         <div class="footerContent">
             <h3>You can find us here</h3>
-            <p>Location: Balkenweg 1, Assen</p>
+            <p>Location: Willinkplein 1</p>
             <p>City: Emmen</p>
+            <p>Opening hours: Tuesday to Sunday from 9:00 to 21:00</p>
         </div>
     </footer>
 

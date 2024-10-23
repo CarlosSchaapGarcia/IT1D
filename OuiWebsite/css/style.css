@@ -228,12 +228,16 @@ header li a{
 #menuh1
 {
     text-align: center;
+    color: #95261F;
+    font-family: "circular-std-medium-500";
+    font-size: 42px;
 }
 
-#menuh1 , #menuh2
+#menuh2
 {
     color: #95261F;
     font-family: "Caveat-Regular";
+    font-size: 36px;
 }
 
 .menulistA , .menulistB
@@ -241,6 +245,7 @@ header li a{
     list-style-type: none;
     color: #95261F;
     font-family: "circular-std-medium-500";
+    font-size: 24px;
 }
 
 .menulistA li , .menulistB li
@@ -468,7 +473,7 @@ footer{
 
 .footerContent{
     color: rgb(0, 101, 124);
-    padding: 90px;
+    padding: 2rem;
 }
 
 .footerContent > p{
