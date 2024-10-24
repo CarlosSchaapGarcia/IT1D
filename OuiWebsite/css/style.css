@@ -595,3 +595,20 @@ footer{
     font-family: "circular-std-medium-500";
 
 }
+
+.commentstylewrong
+{
+    color: red;
+    font-size: 24px;
+    padding: 2rem;
+    font-family: "circular-std-medium-500";
+
+}
+
+.commentstylegood
+{
+    color: green;
+    font-size: 24px;
+    padding: 2rem;
+    font-family: "circular-std-medium-500";
+}

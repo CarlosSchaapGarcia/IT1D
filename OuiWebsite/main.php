@@ -8,6 +8,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
             $bookDate = filter_input(INPUT_POST, "bookDate", FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
             $time = filter_input(INPUT_POST, "time");
             $nrGuests = filter_input(INPUT_POST, "nrGuests", FILTER_SANITIZE_NUMBER_INT);
+            $TextCommentsBoxShareXp = filter_input(INPUT_POST, "TextCommentsBoxShareXp");
 }
 ?>
 
@@ -484,6 +485,19 @@ function PhoneNumberLengthChecker($phoneNumberlength)
 
 }
 
+function commentlenght($text)
+{
+    if(strlen($text) >240)
+    {
+        echo "<p class='commentstylewrong'>Comment has to be under 240 characters</p>";
+    }
+    else
+    {
+        echo "<p class='commentstylegood'>Thank you for the review</p>";
+    }
+}
+
+
 
 ?>
 <section class="main-booking" id="bookPage">
@@ -495,6 +509,7 @@ function PhoneNumberLengthChecker($phoneNumberlength)
 
                 if($_SERVER["REQUEST_METHOD"] == "POST")
                 {
+                    commentlenght($TextCommentsBoxShareXp);
                    checkName($fname);
                    PhoneNumberEmptyChecker($phoneNr);
                    if(empty($time) ){
