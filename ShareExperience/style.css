@@ -55,7 +55,7 @@ input[type="checkbox"]
     padding: 1rem;
 }
 
-input#Comments
+#TextCommentsBoxShareXp
 {
-    width: 100%;
+    resize: none;
 }
