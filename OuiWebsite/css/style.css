@@ -562,3 +562,21 @@ footer{
 .footerContent > h3{
     color: rgb(22, 101, 126);
 }
+
+.warning
+{
+    color: red;
+    font-size: 24px;
+    padding: 2rem;
+    font-family: "circular-std-medium-500";
+
+}
+
+.greenlight
+{
+    color: green;
+    font-size: 24px;
+    padding: 2rem;
+    font-family: "circular-std-medium-500";
+
+}

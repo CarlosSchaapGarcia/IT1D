@@ -1,17 +1,15 @@
 <?php
-        if($_SERVER["REQUEST_METHOD"] == "POST")
 
-        {
+if($_SERVER["REQUEST_METHOD"] == "POST")
+{
             $fname = filter_input(INPUT_POST, "fname");
             $email = filter_input(INPUT_POST, "email");
             $phoneNr = filter_input(INPUT_POST, "phoneNr", FILTER_SANITIZE_NUMBER_INT);
             $bookDate = filter_input(INPUT_POST, "bookDate", FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);
             $time = filter_input(INPUT_POST, "time");
             $nrGuests = filter_input(INPUT_POST, "nrGuests", FILTER_SANITIZE_NUMBER_INT);
-        }
-
-
-    ?>
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -314,7 +312,7 @@ function checkName($name)
 {
     if(empty($name))
     {
-        echo "Please enter your name";
+        echo "<p class='warning'>Please enter your name</p>";
     }
     else
     {
@@ -326,11 +324,11 @@ function checkNameLenght($name)
 {
     if(strlen($name) < 3 || strlen($name) >15)
     {
-        echo "Name has to be between 3 and 15 characters long";
+        echo "<p class='warning'>Name has to be between 3 and 15 characters long</p>";
     }
     else
     {
-        echo "Name is good";
+        echo "<p class='greenlight'>Name is good<p>";
     }
 
 }
@@ -340,7 +338,7 @@ function checkNameLenght($name)
         if(strlen($userInputTime) == 4 || strlen($userInputTime) == 5 ){
             checkTime($userInputTime);
         }else{
-            echo"time is incorrect";
+            echo"<p class='warning'>time is incorrect</p>";
         }
     }
 
@@ -354,7 +352,7 @@ function checkNameLenght($name)
 
     function checkTime2($userInputTime){
         if($userInputTime[0] < 9){
-            echo "we are working from 9";
+            echo "<p class='warning'>we are working from 9</p>";
         }else{
             checkTime3($userInputTime);
         }
@@ -362,9 +360,9 @@ function checkNameLenght($name)
 
     function checkTime3($userInputTime){
         if($userInputTime[2] > 5){
-            echo "invalid time";
+            echo "<p class='warning'>invalid time</p>";
         }else{
-            echo"everything is good";
+            echo"<p class='greenlight'>everything is good</p>";
         }
     }
 
@@ -372,13 +370,13 @@ function checkNameLenght($name)
         if(is_numeric($userInputTime[0]) && is_numeric($userInputTime[1]) && $userInputTime[2] == ":" && is_numeric($userInputTime[3]) && is_numeric($userInputTime[4]) ){
             doubleCheckTime2($userInputTime);
         }else{
-            echo '<h2 class="alert" id="alertMessage"> wrong time</h2></br>';
+            echo "<p class='warning'>Wrong time</p>";
         }
     }
 
     function doubleCheckTime2($userInputTime){
         if($userInputTime[0] > 2){
-            echo "invalid time";
+            echo "<p class='warning'>invalid time</p>";
         }else{
             doubleCheckTime3($userInputTime);
         }
@@ -393,9 +391,9 @@ function checkNameLenght($name)
      }
      function checkTimeFirstNumber1($userInputTime){
         if($userInputTime[3] > 5){
-            echo "Time is incorrect";
+            echo "<p class='warning'>Time is incorrect</p>";
         }else{
-            echo "good to go";
+            echo "<p class='greenlight'>good to go</p>";
         }
      }
 
@@ -403,13 +401,13 @@ function checkNameLenght($name)
         if($userInputTime[0] == 2){
             checkSecondElement2($userInputTime);
         }else{
-            echo "Invalid time";
+            echo "<p class='warning'>Invalid time</p>";
         }
      }
 
      function checkSecondElement2($userInputTime){
         if($userInputTime[1] > 0){
-            echo "We are working until 21:00";
+            echo "<p class='warning'>We are working until 21:00</p>";
         }else{
             checkFourthElement2($userInputTime);
         }
@@ -417,7 +415,7 @@ function checkNameLenght($name)
 
      function checkFourthElement2($userInputTime){
         if($userInputTime[3] > 5){
-            echo "Time is incorrect";
+            echo "<p class='warning'>Time is incorrect</p>";
         }else{
             checkFifthElement2($userInputTime);
         }
@@ -425,23 +423,19 @@ function checkNameLenght($name)
 
     function checkFifthElement2($userInputTime){
         if($userInputTime[4] > 0 && $userInputTime[3] == 5){
-            echo "You can not order a table 10 minutes before closing";
+            echo "<p class='warning'>You can not order a table 10 minutes before closing</p>";
         }else{
-            echo "Congrats";
+            echo "<p class='greenlight'>Congrats</p>";
         }
      }
 
-    if(empty($time) ){
-        echo"Input is empty";
-    }else{
-        checkTimeLength($time);
-    }
+    
 
 function nrGuestsEmptyChecker($nrGuestslength)
 {
     if(empty($nrGuestslength))
     {
-        echo "Please enter the number of guests";
+        echo "<p class='warning'>Please enter the number of guests</p>";
     }
     else
     {
@@ -454,11 +448,11 @@ function checkGuestsLength($nrGuestslength)
 {
     if($nrGuestslength < 1 || $nrGuestslength > 99)
     {
-        echo "The guest size has to be between 1 and 99";
+        echo "<p class='warning'>The guest size has to be between 1 and 99</p>";
     }
     else
     {
-        echo "Guests is good";
+        echo "<p class='greenlight'>Guests is good</p>";
     }
 
 }
@@ -467,7 +461,7 @@ function PhoneNumberEmptyChecker($phoneNumberlength)
 {
     if(empty($phoneNumberlength))
     {
-        echo "Please enter a phone number";
+        echo "<p class='warning'>Please enter a phone number</p>";
     }
     else
     {
@@ -480,24 +474,42 @@ function PhoneNumberLengthChecker($phoneNumberlength)
 {
     if(strlen($phoneNumberlength) == 9)
     {
-        echo "The phone number is good";
+        echo "<p class='greenlight'>The phone number is good</p>";
     }
     else
     {
-        echo "Invalid phone number";
+        echo "<p class='warning'>Invalid phone number</p>";
     }
 
 }
 
-    PhoneNumberEmptyChecker($phoneNr);
-    nrGuestsEmptyChecker($nrGuests);
-    checkName($fname);
+
 }
 
 
 ?>
 <section class="main-booking" id="bookPage">
     <container class="table1">
+        
+
+
+        <?php
+
+                if($_SERVER["REQUEST_METHOD"] == "POST")
+                {
+                   checkName($fname);
+                   PhoneNumberEmptyChecker($phoneNr);
+                   if(empty($time) ){
+                    echo"<p class='warning'>Time is empty</p>";
+                   }else{
+                    checkTimeLength($time);
+                   }
+                   nrGuestsEmptyChecker($nrGuests);
+                }
+        else
+        {
+            
+        ?>
         <h2>Table booking form</h2>
             <form class="BookingForm" action="<?php echo $_SERVER["PHP_SELF"]?>"  method="POST">
                 <label for="fname">Name</label>
@@ -525,6 +537,9 @@ function PhoneNumberLengthChecker($phoneNumberlength)
 
                 
             </form>
+            <?php
+            }
+            ?>
     </container>
 </section>
 
