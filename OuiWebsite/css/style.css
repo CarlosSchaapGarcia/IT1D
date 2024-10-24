@@ -460,6 +460,17 @@ input#Comments
     flex-direction: column;
     
 }
+
+.alert{
+    background-color: #FBEED7;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#alertMessage{
+    color: #F8CA00;
+}
 .BookingForm input{
     margin-bottom: 2vh;
     box-sizing: border-box;

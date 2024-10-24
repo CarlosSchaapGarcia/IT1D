@@ -335,6 +335,15 @@ function checkNameLenght($name)
 
 }
 
+
+    function checkTimeLength($userInputTime){
+        if(strlen($userInputTime) == 4 || strlen($userInputTime) == 5 ){
+            checkTime($userInputTime);
+        }else{
+            echo"time is incorrect";
+        }
+    }
+
     function  checkTime($userInputTime){
         if(is_numeric($userInputTime[0]) && is_numeric($userInputTime[2]) && is_numeric($userInputTime[3]) && $userInputTime[1] == ":"){
             checkTime2($userInputTime);
@@ -352,7 +361,7 @@ function checkNameLenght($name)
     }
 
     function checkTime3($userInputTime){
-        if($userInputTime[2] < 0 || $userInputTime[2] > 5){
+        if($userInputTime[2] > 5){
             echo "invalid time";
         }else{
             echo"everything is good";
@@ -363,12 +372,12 @@ function checkNameLenght($name)
         if(is_numeric($userInputTime[0]) && is_numeric($userInputTime[1]) && $userInputTime[2] == ":" && is_numeric($userInputTime[3]) && is_numeric($userInputTime[4]) ){
             doubleCheckTime2($userInputTime);
         }else{
-            echo '<h2 class="alert"> wrong time</h2>';
+            echo '<h2 class="alert" id="alertMessage"> wrong time</h2></br>';
         }
     }
 
     function doubleCheckTime2($userInputTime){
-        if($userInputTime[0] > 2 || $userInputTime[0] < 1){
+        if($userInputTime[0] > 2){
             echo "invalid time";
         }else{
             doubleCheckTime3($userInputTime);
@@ -425,7 +434,7 @@ function checkNameLenght($name)
     if(empty($time) ){
         echo"Input is empty";
     }else{
-        checkTime($time);
+        checkTimeLength($time);
     }
 
 function nrGuestsEmptyChecker($nrGuestslength)
