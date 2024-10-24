@@ -257,15 +257,17 @@ header li a{
 .EventMainBox
 {
     color: #16657E;
-    background-color: #FBEED7;
+    background-color: rgba(251, 238, 215, 0.8);
 
     display: flex;
     flex-direction: column;
     margin-inline: 15rem;
     padding: 2rem;
     border-radius: 1rem;
-
+    width: 60vw;
     margin-top: 10rem;
+    font-family: "circular-std-medium-500";
+
 }
 .EventMainBox #Eventh1
 {
@@ -279,6 +281,12 @@ header li a{
     gap: 1rem;
 }
 
+#Eventh1
+{
+    font-size: 64px;
+    font-family: "Caveat-Regular";
+}
+
 .eventPicture
 {
     width: 20rem;
@@ -287,6 +295,7 @@ header li a{
 .EventText
 {
     padding-top: 4rem;
+    font-size: 24px;
 }
 
 .Reviewsh1
