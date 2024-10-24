@@ -218,7 +218,7 @@ header li a{
 {
     display: flex;
     flex-direction: column;
-    background-color: #fbeed7;
+    background-color: rgba(251, 238, 215, 0.8);
     margin-inline: 20vw;
     border-radius: 1rem;
     padding-inline: 1rem;
@@ -377,7 +377,7 @@ header li a{
 {
     display: flex;
     flex-direction: column;
-    background-color: #fbeed7;
+    background-color: rgba(251, 238, 215, 0.9);
     margin-inline: 20vw;
     border-radius: 10px;
     padding: 10px;
@@ -425,16 +425,22 @@ input[type="checkbox"]
     padding: 10px;
     color: #FBEED7;
 }
+.ShareExpCommentBox textarea
+{
+    resize: none;
+    height: 8rem;
+    border-radius: 1rem;
+}
 
 .SubmitReview
 {
     display: flex;
     flex-direction: column;
-    margin-inline: 40%;
+    margin-inline: 35%;
     background-color: #00657C;
     border-radius: 10px;
     color: #FBEED7;
-    font-size: 64px;
+    font-size: 34px;
     padding: 1rem;
 }
 

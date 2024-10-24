@@ -277,28 +277,26 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 </section>
 
 <section class="ShareExpBox">
-        <h1 id="ShareExpH1">Share your experience</h1>
+        <h1>Share your experience</h1>
         
         <div class="ShareExpStarBox">
             <p>How was your expreience at our coffee shop?</p>
-            <form class="ReviewStarForm" action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
+            <form action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
                 <input type="checkbox" name="1star" id="1star" class="ReviewStar">
                 <input type="checkbox" name="2star" id="2star" class="ReviewStar">
                 <input type="checkbox" name="3star" id="3star" class="ReviewStar">
                 <input type="checkbox" name="4star" id="4star" class="ReviewStar">
                 <input type="checkbox" name="5star" id="5star" class="ReviewStar">
-             </form>
         </div>
         <p>Your feedback is important to us! Please share your experience below</p>
         <div class="ShareExpCommentBox">
-            <form class="CommentsShareForm" action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
-                <label for="Comments">Comments:</label>
-                <input type="text" name="Comments" id="Comments">
-            </form>
+                <label for="TextCommentsBoxShareXp">Comments:</label>
+                <textarea name="TextCommentsBoxShareXp" id="TextCommentsBoxShareXp"></textarea>
         </div>
-        <form class="ConsentShareForm" action="<?php echo $_SERVER["PHP_SELF"] ?>" method="POST">
+        <div>
             <input type="checkbox" name="ConsentReview" id="ConsentReview">
             <label for="ConsentReview">I agree that my review can be published on the website</label>
+        </div>
             <input type="submit" class="SubmitReview" value="Submit Review">
         </form>
     </section>
