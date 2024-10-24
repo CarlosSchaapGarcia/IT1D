@@ -234,7 +234,7 @@ header li a{
     font-size: 64px;
 }
 
-#menuh2
+.menuh2
 {
     color: #95261F;
     font-family: "Caveat-Regular";
@@ -383,8 +383,14 @@ header li a{
     padding: 10px;
     gap: 1rem;
     color: #00657C;
+    font-size: 24px;
 
     margin-top: 10rem;
+}
+
+.ShareExpH1
+{
+    font-size: 64px;
 }
 
 .ShareExpStarBox
@@ -428,7 +434,7 @@ input[type="checkbox"]
     background-color: #00657C;
     border-radius: 10px;
     color: #FBEED7;
-    font-size: x-large;
+    font-size: 64px;
     padding: 1rem;
 }
 
