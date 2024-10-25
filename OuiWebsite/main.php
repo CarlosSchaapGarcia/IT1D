@@ -294,7 +294,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="textCommentsBoxShareXp">Comments:</label>
                 <textarea name="textCommentsBoxShareXp" id="textCommentsBoxShareXp"></textarea>
             </div>
-            <div>
+            <div class="ConsentReviewForm">
                 <input type="checkbox" name="ConsentReview" id="ConsentReview">
                 <label for="ConsentReview">I agree that my review can be published on the website</label>
             </div>

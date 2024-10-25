@@ -393,6 +393,8 @@ header li a{
     gap: 1rem;
     color: #00657C;
     font-size: 24px;
+    font-family: "circular-std-medium-500";
+
 
     margin-top: 10rem;
 }
@@ -414,20 +416,51 @@ header li a{
     -webkit-appearance: none;
     cursor: pointer;
 
-    width: 2rem;  
+    width: 3rem;  
     aspect-ratio: 1;
-    background: #d5d5d5;
+    background: grey;
     clip-path: polygon(50% 0,
-      calc(50%(1 + sin(.4turn))) calc(50%(1 - cos(.4turn))),
-      calc(50%(1 - sin(.2turn))) calc(50%(1 - cos(.2turn))),
-      calc(50%(1 + sin(.2turn))) calc(50%(1 - cos(.2turn))),
-      calc(50%(1 - sin(.4turn))) calc(50%(1 - cos(.4turn))) 
-     ); 
-
+    calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+    );  
 }
+
+.ShareExpStarBox input[type="checkbox"]:hover
+{
+    background-color: rgb(255, 255, 188);
+}
+
 input[type="checkbox"]:checked {
-    background-color: yellow;
-  }
+    background-color: rgb(255, 255, 0);
+}
+
+.ConsentReviewForm input[type="checkbox"]
+{
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: grey;
+}
+.ConsentReviewForm input[type="checkbox"]:hover
+{
+    background-color: rgb(30, 28, 28);
+}
+.ConsentReviewForm input[type="checkbox"]:checked {
+    background-color: black;
+}
+
+.ConsentReviewForm
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 
 .ShareExpCommentBox
 {
