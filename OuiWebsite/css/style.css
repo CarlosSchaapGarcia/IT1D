@@ -232,6 +232,7 @@ header li a{
     color: #95261F;
     font-family: "circular-std-medium-500";
     font-size: 64px;
+    margin-left: 1vw;
 }
 
 .menuh2
@@ -239,6 +240,8 @@ header li a{
     color: #95261F;
     font-family: "Caveat-Regular";
     font-size: 36px;
+    margin-left: 1vw;
+    
 }
 
 .menulistA , .menulistB
@@ -247,6 +250,8 @@ header li a{
     color: #95261F;
     font-family: "circular-std-medium-500";
     font-size: 24px;
+    padding: 0;
+    margin-left: 1vw;
 }
 
 .menulistA li , .menulistB li
@@ -389,7 +394,7 @@ header li a{
     background-color: rgba(251, 238, 215, 0.9);
     margin-inline: 20vw;
     border-radius: 10px;
-    padding: 10px;
+    padding: 3rem;
     gap: 1rem;
     color: #00657C;
     font-size: 24px;
@@ -506,7 +511,7 @@ input#Comments
     background-color: #FBEED7;
     border-radius: 25px;
     height: 80vh;
-    max-height: 80vh;
+    max-height: 90vh;
 
     margin-top: 10rem;
 }
