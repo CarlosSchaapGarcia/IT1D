@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </section>
         <section class="aboutus-page" id="about-page">
 
-            <container class="whydifferent">
+            <div class="whydifferent">
                 <p class="whyarewedifferent">Why are we different?</p>
                 <div class="whybox">
                     <img class="coffeebeans" src="./img/coffee-beans_1-removebg-preview.png" alt="coffee beans">
@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <p class="supremebeans">Affordable Price</p>
                     <p class="beansgreattaste">Our Coffee prices are easy to afford</p>
                 </div>
-            </container>
+</div>
 
             <aside class="aboutus1">
                 <p class="aboutus">About us</p>
@@ -116,7 +116,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h1 id="Eventh1">Events</h1>
             <section class="eventbox">
                 <img class="eventPicture" src="img/eventpic.png" alt="event_picutre">
-                <container class="EventText">
+                <div class="EventText">
                     <p>
                         Join us for a special event at our café! Come celebrate with us with delicious coffee, fresh croissants.
                         Come celebrate with us, enjoy great company, and experience. We can't wait to see you there!
@@ -124,7 +124,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <p>
                         We will see you soon!
                     </p>
-                </container>
+                </div>
             </section>
         </article>
 
@@ -489,7 +489,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         ?>
         <section class="main-booking" id="bookPage">
-            <container class="table1">
+            <div class="table1">
 
 
 
@@ -539,7 +539,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     }
                 
                 ?>
-            </container>
+            </div>
         </section>
 
         <footer>
