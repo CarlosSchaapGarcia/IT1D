@@ -362,14 +362,9 @@ header li a{
 .container
 {
     height: 70vh;
-    width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     background-color: rgba(251, 238, 215, 0.9);
-    text-align: center;
-    overflow: hidden;
-    flex-direction: row;
 }
 
 .box
@@ -381,7 +376,6 @@ header li a{
     padding: 4em 0 0 0;
     margin-inline: 0.5rem;
     display: flex;
-    justify-content: center;
     text-align: center;
     flex-shrink: 0;
 }
