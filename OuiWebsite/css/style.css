@@ -150,7 +150,6 @@ header li a{
     margin: auto;
     justify-content: space-around;
     flex-direction: row;
-    direction: row;
     text-align: center;
 }
 
@@ -394,7 +393,7 @@ header li a{
     background-color: rgba(251, 238, 215, 0.9);
     margin-inline: 20vw;
     border-radius: 10px;
-    padding: 3rem;
+    padding: 2rem;
     gap: 1rem;
     color: #00657C;
     font-size: 24px;
@@ -462,8 +461,12 @@ input[type="checkbox"]:checked {
 .ConsentReviewForm
 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+   
+}
+.textReview{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
 }
 
 
@@ -493,6 +496,12 @@ input[type="checkbox"]:checked {
     color: #FBEED7;
     font-size: 34px;
     padding: 1rem;
+    margin: auto;
+}
+.tableForSubmitButton{
+    display: flex;
+    align-items: center;
+    margin-top: auto;
 }
 
 input#Comments

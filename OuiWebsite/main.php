@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <p>That is the French essence. <br>Café OUI captures the this spirit of France <br>and brings it to the Netherlands.</p>
 
             <p class="menuButton">
-                <a href="#menuh1">Menu</a>
+                <a href="#menu-page">Menu</a>
             </p>
         </section>
         <section class="aboutus-page" id="about-page">
@@ -302,9 +302,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="ConsentReviewForm">
                 <input type="checkbox" name="ConsentReview" id="ConsentReview">
-                <label for="ConsentReview">I agree that my review can be published on the website</label>
+                <label for="ConsentReview" class="textReview">I agree that my review can be published on the website</label>
             </div>
-            <input type="submit" class="SubmitReview" value="Submit Review" name="submit-review">
+            <div class="tableForSubmitButton">
+                <input type="submit" class="SubmitReview" value="Submit Review" name="submit-review">
+            </div>
             </form>
 
 
