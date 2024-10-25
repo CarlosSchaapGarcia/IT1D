@@ -407,23 +407,27 @@ header li a{
     display: flex;
     flex-direction: column;
 }
-.ReviewStar
+
+.ShareExpStarBox input[type="checkbox"]
 {
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+
     width: 2rem;  
     aspect-ratio: 1;
-    background: #F8CA00;
+    background: #d5d5d5;
     clip-path: polygon(50% 0,
-      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
-      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))) 
+      calc(50%(1 + sin(.4turn))) calc(50%(1 - cos(.4turn))),
+      calc(50%(1 - sin(.2turn))) calc(50%(1 - cos(.2turn))),
+      calc(50%(1 + sin(.2turn))) calc(50%(1 - cos(.2turn))),
+      calc(50%(1 - sin(.4turn))) calc(50%(1 - cos(.4turn))) 
      ); 
-}
 
-input[type="checkbox"] 
-{
-    accent-color: rgb(253, 253, 0);
 }
+input[type="checkbox"]:checked {
+    background-color: yellow;
+  }
 
 .ShareExpCommentBox
 {
