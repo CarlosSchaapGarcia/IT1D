@@ -278,7 +278,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </section>
 
         <section class="ShareExpBox" id="share-experience-section">
-            <h1>Share your experience</h1>
+
+        <?php
+                if (isset($_POST["submit-review"])) {
+                commentlenght($textCommentsBoxShareXp);
+                 }
+                else {
+                ?>       <h1>Share your experience</h1>
 
             <div class="ShareExpStarBox">
                 <p>How was your expreience at our coffee shop?</p>
@@ -300,6 +306,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <input type="submit" class="SubmitReview" value="Submit Review" name="submit-review">
             </form>
+
+
+            <?php
+                }
+                ?>
+
         </section>
 
         <?php
@@ -311,9 +323,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo "<p class='commentstylegood'>Thank you for the review</p>";
             }
         }
-        if (isset($_POST["submit-review"])) {
-            commentlenght($textCommentsBoxShareXp);
-        }
+
 
         ?>
 
